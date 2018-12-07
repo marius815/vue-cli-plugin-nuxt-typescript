@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    <%_ if (options.nuxtDecorators) { _%>
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    <%_ } _%>
+    "jsx": "preserve",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "paths": {
+      "~/*": [".<%= options.moveToSrc ? '/src' : '' %>/*"],
+      "@/*": [".<%= options.moveToSrc ? '/src' : '' %>/*"],
+      "~~/*": ["./*"],
+      "@@/*": ["./*"]
+    },
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
+  },
+  "include": [
+    ".<%= options.moveToSrc ? '/src' : '' %>/**/*.ts",
+    ".<%= options.moveToSrc ? '/src' : '' %>/**/*.tsx",
+    ".<%= options.moveToSrc ? '/src' : '' %>/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    ".nuxt"
+  ]
+}
