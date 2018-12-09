@@ -5,6 +5,14 @@
   "main": "index.js",
   "author": "Marius Aronsen <marius.aronsen@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marius815/vue-cli-plugin-nuxt-typescript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marius815/vue-cli-plugin-nuxt-typescript/issues"
+  },
+  "homepage": "https://github.com/marius815/vue-cli-plugin-nuxt-typescript",
   "keywords": [
     "vue-cli",
     "vue-cli nuxt",
