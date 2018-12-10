@@ -28,6 +28,8 @@ module.exports = (api, options, rootOptions) => {
         build: 'nuxt build',
         start: 'nuxt start',
         generate: 'nuxt generate',
+        serve:
+          'echo "\'serve\' will not work as expected. Use dev/build/start/generate instead." && exit 1',
       },
     });
 
