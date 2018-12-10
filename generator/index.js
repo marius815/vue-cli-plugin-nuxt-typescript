@@ -81,8 +81,6 @@ module.exports = (api, options, rootOptions) => {
         }
 
         files['nuxt.config.js'] = buffer.join('\n');
-      } else {
-        /** nuxt.config.js is missing, drop in a default one */
       }
 
       if (options.moveToSrc) {
