@@ -48,6 +48,14 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    <%_ if (options.hasBabel) { _%>
+    babel: {
+      plugins: [
+        '@babel/plugin-transform-runtime'
+      ]
+    },
+
+    <% } _%>
     /*
     ** You can extend webpack config here
     */

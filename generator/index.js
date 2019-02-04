@@ -47,6 +47,14 @@ module.exports = (api, options, rootOptions) => {
         },
       });
       options.hasESLint = true;
+
+    if (api.hasPlugin('babel')) {
+      api.extendPackage({
+        devDependencies: {
+          '@babel/plugin-transform-runtime': '^7.2.0',
+        },
+      });
+      options.hasBabel = true;
     }
 
     api.render('./template/default');
