@@ -12,7 +12,6 @@ module.exports = (api, options, rootOptions) => {
     api.extendPackage({
       devDependencies: {
         'ts-loader': '^5.3.1',
-        typescript: '~3.1.1',
       },
       dependencies: {
         nuxt: '^2.0.0',
@@ -47,6 +46,13 @@ module.exports = (api, options, rootOptions) => {
         },
       });
       options.hasESLint = true;
+    } else {
+      api.extendPackage({
+        devDependencies: {
+          typescript: '^3.3.1',
+        },
+      });
+    }
 
     if (api.hasPlugin('babel')) {
       api.extendPackage({
