@@ -42,7 +42,8 @@ module.exports = (api, options, rootOptions) => {
       api.extendPackage({
         devDependencies: {
           'eslint-loader': '^2.0.0',
-          'typescript-eslint-parser': '^21.0.1',
+          '@typescript-eslint/parser': '^1.2.0',
+          typescript: '~3.2.1', // Downgrade to supported parser version
         },
       });
       options.hasESLint = true;
