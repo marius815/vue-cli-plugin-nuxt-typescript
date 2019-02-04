@@ -1,4 +1,8 @@
-# vue-cli-plugin-nuxt-typescript
+# Note! Native Nuxt TypeScript support
+
+As of [2.4.0](https://github.com/nuxt/nuxt.js/releases/tag/v2.4.0), Nuxt has native TypeScript support, effectively making this plugin redundant. Consider using that version of Nuxt rather than this plugin.
+
+## vue-cli-plugin-nuxt-typescript
 
 Nuxt.js with TypeScript support
 

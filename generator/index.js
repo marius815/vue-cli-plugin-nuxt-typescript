@@ -1,4 +1,9 @@
 const helpers = require('./helpers');
+const { warn } = require('@vue/cli-shared-utils');
+
+warn(
+  'Nuxt 2.4.0 added native TypeScript support. Consider using that version rather than this plugin.'
+);
 
 module.exports = (api, options, rootOptions) => {
   if (!api.hasPlugin('typescript')) {
